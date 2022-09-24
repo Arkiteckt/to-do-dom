@@ -9,33 +9,28 @@
     href="styles.css">
 </head>
 <body>
+    <h1>To-Do List</h1>
     <form>
-        <label></label>
-        <h1>To do List</h1>
-        <input id="userInput" type="text" autocomplete="off" placeholder="Enter name here">
-       <!--<input id="submitButton" type="submit"---->
+    <input id="toDo" type="text">
+    <input id="submit" type="submit">
     </form>
-       <div id="parent">
-        <div class="container"></div>
-    <button id="push">ADD</button>
-   <!--Button 2 has two classes, ".button" and ".active"-->
-   <button class="button active">
-       REMOVE COMPLETED TASKS
-   </button>
-   <button class="button">
-       REMOVE ALL
-   </button>
-       </div>
+
+    <button id="removeCompleted">REMOVE COMPLETED TASK</button>
+    <button id="removeAll">REMVOVE ALL</button>
+<ul>
+
+</ul>
+<script src="main.js"></script>
+<script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("p").toggle();
+      });
+    });
+    </script>
 </body>
 </html>
+   
 
 
-<!-- 
-<ul id="myUL">
-    <li>Hit the gym</li>
-    <li class="checked">Pay bills</li>
-    <li>Meet George</li>
-    <li>Buy eggs</li>
-    <li>Read a book</li>
-    <li>Organize office</li>
-  </ul> -->
+
